@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Setima - Accueil</title>
+  <style>
+    /* Styles modernes communs */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f3;
+      color: #5a3e36;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 25px;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 35px;
+      border-bottom: 2px solid #d9bca7;
+      padding-bottom: 15px;
+      position: relative;
+    }
+    nav a {
+      margin: 0 18px;
+      color: #a66f58;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.15em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      color: #d9885c;
+      border-bottom: 3px solid #d9885c;
+      padding-bottom: 5px;
+    }
+    h1 {
+      font-size: 3.4em;
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 5px;
+      margin-bottom: 5px;
+      color: #a66f58;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-style: italic;
+      text-align: center;
+      color: #9b6b4f;
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    p, ul {
+      font-size: 1.25em;
+      line-height: 1.7;
+      color: #6a4c3a;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    img.logo {
+      display: block;
+      margin: 0 auto 25px auto;
+      max-width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(166,111,88,0.3);
+    }
+    /* Bouton contact */
+    .btn-contact {
+      display: inline-block;
+      background-color: #a66f58;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.3s ease;
+      margin: 30px auto;
+      text-align: center;
+      display: block;
+      max-width: 200px;
+    }
+    .btn-contact:hover {
+      background-color: #d9885c;
+    }
+
+    /* Menu hamburger styles */
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 1.8em;
+      user-select: none;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      color: #a66f58;
+      padding: 5px 15px;
+      border: 2px solid #a66f58;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .menu-toggle:hover {
+      background-color: #a66f58;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      transition: max-height 0.3s ease;
+    }
+    nav ul li {
+      display: inline-block;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav ul {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      nav ul.active {
+        max-height: 500px; /* assez grand pour afficher les liens */
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      nav a {
+        margin: 0;
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="menu-toggle">☰ Menu</div>
+    <ul>
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="produits.html">Nos produits</a></li>
+    </ul>
+  </nav>
+
+  <img src="logo.png" alt="Logo Setima" class="logo" />
+
+  <h1>SETIMA</h1>
+  <h2>L’éclat de l’élégance</h2>
+
+  <p>Setima est plus qu’une marque. C’est un univers. Un lieu d’émotion, de lumière et de mystère, où chaque détail incarne la force douce de la féminité.</p>
+
+  <h3>Nos créations</h3>
+  <ul>
+    <li>Vêtements féminins raffinés et enracinés</li>
+    <li>Bougies parfumées aux senteurs subtiles</li>
+    <li>Une touche de cosmétique douce et précieuse</li>
+  </ul>
+
+  <h3>Notre essence</h3>
+  <ul>
+    <li>Élégance sans effort</li>
+    <li>Luxe discret</li>
+    <li>Identité enracinée</li>
+    <li>Éveil des sens</li>
+    <li>Harmonie entre tradition et modernité</li>
+  </ul>
+
+  <a href="mailto:khadija.d1@outlook.com" class="btn-contact">Contactez-nous</a>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
